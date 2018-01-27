@@ -31,34 +31,40 @@ body {
     }
   }
 
-  .site-header, .site-footer {
-    padding: 1rem;
-    background-color: $maastricht-blue;
-    color: white;
-    a {
-      color: $light-cyan;
-    }
-  }
-
-  .site-content {
-    padding: 1rem;
-    flex: 1;
-    color: $charcoal;
-    background-color: $light-cyan;
-  }
-
   .site-container {
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  .site-header, .site-footer {
+    .site-container {
+      padding: 1rem;
+      color: white;
+      a {
+        color: $light-cyan;
+      }
+      background-color: $maastricht-blue;
+    }
+  }
+
+  .site-content {
+    flex: 1;
+    position: relative;
+    display: flex;
+
+    .site-container {
+      flex: 1;
+      color: $charcoal;
+      background-color: $light-cyan;
+      padding: 1.5rem;
+    }
+  }
+
   .post {
     img {
       max-width: 100%;
     }
-
-
   }
 
   code.highlighter-rouge {
