@@ -15,7 +15,7 @@ A simple, quality setup for web pages from scratch, using free software and Web 
 
 Virtually every website in existence uses these basic concepts and technologies, although usually with greater sophistication.  You can apply skills employed here to the Web more broadly; after this, it's just specialization.
 
-![Here's a fuzzy cat.  Please move along.](/static/{{ page.slug }}/test_cat.jpg "Just a fuzzy cat.  Please move along.")
+![Here's a fuzzy cat.  Please move along.](/static/{{ page.slug }}/test_cat.jpg "Just a fuzzy cat.  Please move along."){:width="1200px"}
 
 ## Requirements
 

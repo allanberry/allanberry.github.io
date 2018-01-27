@@ -2,8 +2,80 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "reboot.css";
+@import "css/reboot.css";
+@import "css/syntax.css";
+
+// colors: https://coolors.co/011638-364156-cdcdcd-dff8eb-214e34
+$maastricht-blue: rgba(1, 22, 56, 1);
+$charcoal: rgba(54, 65, 86, 1);
+$pastel-gray: rgba(205, 205, 205, 1);
+$light-cyan: rgba(223, 248, 235, 1);
+$pomona-green: rgba(33, 78, 52, 1);
+
+$overlay: hsla(0, 0%, 100%, .75);
 
 body {
-  margin: 1rem;
+  background-color: $charcoal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  h1, h2, h3, h4, h5, h6 {
+    color: $maastricht-blue;
+  }
+
+  a {
+    color: darkorange;
+    &:hover, &:active {
+      color: orangered;
+    }
+  }
+
+  .site-header, .site-footer {
+    padding: 1rem;
+    background-color: $maastricht-blue;
+    color: white;
+    a {
+      color: $light-cyan;
+    }
+  }
+
+  .site-content {
+    padding: 1rem;
+    flex: 1;
+    color: $charcoal;
+    background-color: $light-cyan;
+  }
+
+  .site-container {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .post {
+    img {
+      max-width: 100%;
+    }
+
+
+  }
+
+  code.highlighter-rouge {
+    padding: .125rem .25rem;
+    background-color: $overlay
+  }
+
+  .highlighter-rouge {
+    .highlight {
+      background-color: $overlay;
+    }
+
+    > .highlight {
+      padding: 1.5rem 2rem;
+      margin-left: -1.5rem;
+      margin-right: -1.5rem;
+      margin-bottom: 1em;
+    }
+  }
 }

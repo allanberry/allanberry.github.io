@@ -1,9 +1,9 @@
 ---
 layout: default
 ---
-<article>
+<article class="post">
 
-  <header>
+  <header class="post-header">
     <h1>{{ page.title | escape }}</h1>
     <p>
       <time>
@@ -15,6 +15,7 @@ layout: default
       {% endif %}
     </p>
   </header>
-
-  {{ content }}
+  <div class="post-body">
+    {{ content }}
+  </div>
 </article>
