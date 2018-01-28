@@ -2,14 +2,18 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include header.html %}
+    <header id="site-header">
+      {% include header.html %}
+    </header>
 
-    <main class="site-content" aria-label="Content">
-      <div class="site-container">
+    <main id="site-main">
+      <div class="container">
         {{ content }}
       </div>
     </main>
 
-    {% include footer.html %}
+    <footer id="site-footer">
+      {% include footer.html %}
+    </footer>
   </body>
 </html>

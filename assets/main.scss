@@ -5,8 +5,8 @@
 @import "css/reboot.css";
 @import "css/syntax.css";
 
-// colors: https://coolors.co/011638-364156-cdcdcd-dff8eb-214e34
-$maastricht-blue: rgba(1, 22, 56, 1);
+// colors: https://coolors.co/1c2638-364156-cdcdcd-dff8eb-214e34
+$maastricht-blue: #1C2638;
 $charcoal: rgba(54, 65, 86, 1);
 $pastel-gray: rgba(205, 205, 205, 1);
 $light-cyan: rgba(223, 248, 235, 1);
@@ -16,72 +16,98 @@ $overlay: hsla(0, 0%, 100%, .75);
 
 body {
   background-color: $charcoal;
+  color: $pastel-gray;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 
-  h1, h2, h3, h4, h5, h6 {
-    color: $maastricht-blue;
+  h1, h2, h3, h4, h5, h6, dt {
+    color: white;
   }
 
-  a {
-    color: darkorange;
-    &:hover, &:active {
-      color: orangered;
-    }
+  dl>dd {
+    padding-left: 1rem;
   }
 
-  .site-container {
+  .container {
+    // should ONLY be for centering
+    width: 100%;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .site-header, .site-footer {
-    .site-container {
-      padding: 1rem;
-      color: white;
+  header {
+    .container {
+      background-color: hsla(0, 0, 0, .25);
+      color: $pastel-gray;
+    }
+    div#branding {
+      padding: 5rem 1rem;
+      text-align: center;
+      font-family: 'Bungee Hairline', cursive;
+      font-size: 2em;
+      line-height: 1.5em;
+      letter-spacing: .25em;
+
       a {
-        color: $light-cyan;
+        color: white;
+        &:hover, &:active {
+          text-decoration: none;
+        }
       }
-      background-color: $maastricht-blue;
+    }
+    nav#nav-main {
+      background-color: hsla(0,0,0,.125);
+      display: flex;
+      flex-direction: row;
+      a {
+        display: inline;
+        padding: 1rem;
+        &:hover, &:active  {
+          color: white;
+          background-color: hsla(0,0,0,.25);
+          text-decoration: none;
+        }
+      }
     }
   }
-
-  .site-content {
+  main {
     flex: 1;
-    position: relative;
     display: flex;
-
-    .site-container {
+    flex-direction: column;
+    .container {
+      background-color: $maastricht-blue;
+      padding: 2rem 1rem;
       flex: 1;
-      color: $charcoal;
-      background-color: $light-cyan;
-      padding: 1.5rem;
     }
-  }
 
-  .post {
     img {
       max-width: 100%;
     }
-  }
 
-  code.highlighter-rouge {
-    padding: .125rem .25rem;
-    background-color: $overlay
-  }
-
-  .highlighter-rouge {
-    .highlight {
-      background-color: $overlay;
+    .highlighter-rouge {
+      background-color: hsla(0,0,0%,.25);
     }
 
-    > .highlight {
-      padding: 1.5rem 2rem;
-      margin-left: -1.5rem;
-      margin-right: -1.5rem;
-      margin-bottom: 1em;
+    code.highlighter-rouge {
+      padding: .125em .5em;
+    }
+
+    div.highlighter-rouge {
+      margin-left: -1rem;
+      margin-right: -1rem;
+
+      .highlight .highlight {
+        padding: 1rem;
+      }
+    }
+  }
+  footer {
+    .container {
+      background-color: hsla(0, 0, 0, .25);
+      color: $pastel-gray;
+      padding: 1rem;
     }
   }
 }
