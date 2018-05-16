@@ -15,6 +15,9 @@ LinkedIn
 Stack Overflow
 : [allanberry](https://stackoverflow.com/users/652626/allanberry)
 
+Slack
+: allanberry
+
 GitHub
 : [allanberry](https://github.com/allanberry)
 
