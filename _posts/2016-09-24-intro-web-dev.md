@@ -1,12 +1,15 @@
 ---
-layout:     post
-title:      Elementary Web Development
-author:     Allan Berry
-date:       2016-09-24
-slug:       intro-web-dev
-categories: webdev tutorial html css javascript
+title: Elementary Web Development
+date: 2016-09-24 00:00:00 Z
+categories:
+- webdev
+- tutorial
+- html
+- css
+- javascript
+layout: post
+author: Allan Berry
 ---
-
 
 Introduction to Web Development: <br>Concepts and a Basic Infrastructure
 ===
