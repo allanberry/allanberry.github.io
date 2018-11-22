@@ -1,0 +1,132 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "css/reboot.css";
+@import "css/syntax.css";
+
+// colors: https://coolors.co/1c2638-364156-cdcdcd-dff8eb-214e34
+$maastricht-blue: #1C2638;
+$charcoal: rgba(54, 65, 86, 1);
+$pastel-gray: rgba(205, 205, 205, 1);
+$light-cyan: rgba(223, 248, 235, 1);
+$pomona-green: rgba(33, 78, 52, 1);
+
+$overlay: hsla(0, 0%, 100%, .75);
+
+body {
+  background-color: $charcoal;
+  color: $pastel-gray;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  h1, h2, h3, h4, h5, h6, dt {
+    color: white;
+  }
+
+  dl>dd {
+    padding-left: 1rem;
+  }
+
+  .container {
+    // should ONLY be for centering
+    width: 100%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header {
+
+    .container {
+      background-color: hsla(0, 0, 0, .25);
+      color: $pastel-gray;
+      position: relative;
+    }
+    div#branding {
+      padding: 5rem 1rem;
+      text-align: center;
+      font-family: 'Bungee Hairline', cursive;
+      font-size: 2em;
+      line-height: 1.5em;
+      letter-spacing: .25em;
+      z-index: 1;
+
+      h1 {
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+        a {
+          color: white;
+          &:hover, &:active {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    nav#nav-main {
+      background-color: hsla(0,0,0,.25);
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      z-index: 2;
+      a {
+        display: inline;
+        padding: 1rem;
+        color: white;
+        background-color: hsla(0,0,0,.5);
+        &:hover, &:active  {
+          background-color: hsla(0,0,100%,.5);
+          color: $maastricht-blue;
+          text-decoration: none;
+        }
+      }
+    }
+    svg#bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    .container {
+      background-color: $maastricht-blue;
+      padding: 2rem 1rem;
+      flex: 1;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .highlighter-rouge {
+      background-color: hsla(0,0,0%,.25);
+    }
+
+    code.highlighter-rouge {
+      padding: .125em .5em;
+    }
+
+    div.highlighter-rouge {
+      margin-left: -1rem;
+      margin-right: -1rem;
+
+      .highlight .highlight {
+        padding: 1rem;
+      }
+    }
+  }
+  footer {
+    .container {
+      background-color: hsla(0, 0, 0, .25);
+      color: $pastel-gray;
+      padding: 1rem;
+    }
+  }
+}

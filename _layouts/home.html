@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<p>Allan Berry is a developer and librarian in Chicago IL, originally from Detroit MI. Currently he helps build the web for the <a href="https://library.uic.edu/">University of Illinois at Chicago Library</a>.</p>
+
+<p>Allan is cutting this website from whole cloth, as time permits; two small children occupy most of his time at the moment.  Please forgive a certain... simplicity.  Thanks.</p>
+
+<div>
+  <h2>Posts</h2>
+
+  {{ content }}
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <p>{{ post.date | date: date_format }}</p>
+        <p><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
