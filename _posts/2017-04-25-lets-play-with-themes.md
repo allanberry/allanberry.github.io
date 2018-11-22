@@ -1,10 +1,13 @@
 ---
-layout:     post
-title:      "Let's play with Jekyll themes"
-date:       2017-04-25
-categories: ruby jekyll github themes
+title: Let's play with Jekyll themes
+date: 2017-04-25 00:00:00 Z
+categories:
+- ruby
+- jekyll
+- github
+- themes
+layout: post
 ---
-
 
 Jekyll has a robust, well-designed theming system, on par with the likes of Ruby on Rails, Wordpress, or Django.  With some HTML skills, Jekyll themes aren't too hard to adapt from [free](http://themes.jekyllrc.org/) or even [professionally-designed](https://jekyllthemes.io/) themes, readily available on the web.  They're also simple enough to roll your own.
 

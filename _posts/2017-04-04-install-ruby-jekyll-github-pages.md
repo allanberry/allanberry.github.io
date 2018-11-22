@@ -1,8 +1,11 @@
 ---
-layout:     post
-title:      "Install Ruby and Jekyll for Github Pages"
-date:       2017-04-04
-categories: ruby jekyll github
+title: Install Ruby and Jekyll for Github Pages
+date: 2017-04-04 00:00:00 Z
+categories:
+- ruby
+- jekyll
+- github
+layout: post
 ---
 
 So, Jekyll is great.
