@@ -12,9 +12,7 @@ So, Jekyll is great.
 
 Readme: `https://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/`
 
-Win instructions
-    https://labs.sverrirs.com/jekyll/
-
+[Windows instructions](https://labs.sverrirs.com/jekyll/)
 
 Getting Started
 ---
@@ -108,7 +106,8 @@ Installing Jekyll
 ---
 
 Now that we have a discreet Ruby, we can install Jekyll.  At this point, I'm leaning on the [official install docs](https://jekyllrb.com/docs/installation/).  This uses the Ruby package manager, RubyGems, to install Jekyll.
-    gem install jekyll
+
+    $ gem install jekyll
     $ jekyll --version
     jekyll 3.4.3
 
